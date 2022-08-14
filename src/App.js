@@ -17,7 +17,7 @@ function App() {
       <Node/>
       <Element/>
 
-      <button onClick={()=>hanleClick()} className="p-4 border border-blue ">Press ME</button>
+      <button onClick={()=>hanleClick()} className="p-4 border border-blue ">Press</button>
     </div>
   );
 }
