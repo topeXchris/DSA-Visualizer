@@ -4,7 +4,6 @@
 
 @layer components {
 .node{
-
   display: flex;
   justify-content:center;
   align-items:center;
@@ -40,6 +39,9 @@
 
 @layer components{
   .element{
+    display: flex;
+    justify-content:center;
+    align-items:center;
     border-color: theme('colors.orange-light');
     border-width: 5px; 
     height: 10rem;

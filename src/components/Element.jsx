@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Element = ({animate}) => {
+const Element = ({value}) => {
   return (
-    <div className='element'>Element</div>
+    <div className='element text-7xl text-white'>{value}</div>
   )
 }
 
