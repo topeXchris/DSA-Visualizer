@@ -5,9 +5,7 @@ const MainPageBody = () => {
   return (
     <div className='flex flex-row'>
     <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+
 </div>
   )
 }

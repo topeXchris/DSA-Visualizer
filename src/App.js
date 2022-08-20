@@ -5,6 +5,7 @@ import Node from "./components/Node";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import MainPages from "./pages/MainPages";
+import Navigation from "./routes/Navigation";
 
 function App() {
   const [arr,setArr] = React.useState([1]);
@@ -15,11 +16,7 @@ function App() {
   }
   return (
     <div>
-      <Header/>
-      <div className="md:flex justify-center m-8">
-        <MainPages/>
-      </div>
-      <Footer/>
+      <Navigation/>
     </div>
   );
 }
