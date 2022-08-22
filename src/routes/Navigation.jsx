@@ -9,7 +9,7 @@ const Navigation =()=>{
     return(
       <>
         <Router>
-          <div className="md:flex justify-between flex-col min-h-screen">
+          <div className="flex justify-between flex-col min-h-screen">
             <Header/>
             <Routes>
               <Route exact path="/"  element={<MainPages/>} />

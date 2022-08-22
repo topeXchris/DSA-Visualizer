@@ -4,7 +4,7 @@ import TitleBar from '../components/TitleBar'
 
 const Header = () => {
   return (
-    <div className='flex flex-col justify-evenly bg-orange h-[8rem]'>
+    <div className='flex flex-col justify-evenly bg-orange md:h-[8rem] overflow-auto'>
         <TitleBar/>
         <SearchBar/>
     </div>

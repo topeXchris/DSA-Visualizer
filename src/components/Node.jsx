@@ -2,7 +2,7 @@ import React from 'react'
 
 const Node = () => {
   return (
-    <div className='node text-7xl p-0'>
+    <div className='node text-5xl p-0'>
         0
     </div>
   )
