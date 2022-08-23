@@ -1,10 +1,4 @@
 import React from "react";
-import Element from "./components/Element";
-import Line from "./components/Line";
-import Node from "./components/Node";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
-import MainPages from "./pages/MainPages";
 import Navigation from "./routes/Navigation";
 
 function App() {
