@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Node = () => {
+const Node = ({value}) => {
   return (
     <div className='node text-5xl p-0'>
-        0
+        {value}
     </div>
   )
 }

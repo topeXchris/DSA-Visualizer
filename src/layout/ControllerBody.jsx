@@ -12,10 +12,11 @@ const ControllerBody = ({item,operation}) => {
           {operation}
           <div className='flex flex-row flex-grow mx-5 items-center p-4 overflow-scroll md:overflow-scroll'>
           {array.map((i,index) =>
-            <>
-            <Node/>
+
+            <div className='flex flex-row items-center' key={index}>
+            <Node value={i}/>
             {index !== array.length - 1 ? <Line/>: <></>}
-            </>)}
+            </div>)}
 
           </div>
         <ControlBar/>
