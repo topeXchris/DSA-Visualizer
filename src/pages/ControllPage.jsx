@@ -16,7 +16,7 @@ const ControllPage = () => {
     dispatch(operationAction.pop())
   }
   return (
-    <div className="flex justify-center px-10 m-8 flex-row w-auto overflow-auto">
+    <div className="flex justify-center px-10 m-8 flex-row">
         <ControllerBody
           operation={
           <OperationBar

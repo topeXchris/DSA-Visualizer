@@ -8,13 +8,15 @@ import { useSelector } from 'react-redux'
 const ControllerBody = ({item,operation}) => {
   const array = useSelector(getArray);
   return (
-    <div className='flex justify-evenly flex-col  min-h[10rem] h-auto md:min-h-[30rem] md:min-w-[75rem] border-2 border-orange-light sm:w-full  w-screen'>
-          {operation}
-          <div className='flex flex-row flex-grow mx-5 items-center p-4 overflow-scroll md:overflow-scroll'>
+    <div className='flex justify-evenly flex-col border-2 border-orange-light w-screen md:w-full'>
+        <div className='overflow-y-visible'>
+        {operation}
+        </div>
+          <div className='flex flex-row flex-grow mx-5 items-center p-4 overflow-scroll md:overflow-scroll min-h[10rem] h-auto md:min-h-[20rem]'>
           {array.map((i,index) =>
 
             <div className='flex flex-row items-center' key={index}>
-            <Node value={i}/>
+            <Node value={index}/>
             {index !== array.length - 1 ? <Line/>: <></>}
             </div>)}
 
