@@ -2,6 +2,7 @@ import React from 'react'
 import ControlBar from '../components/ControlBar'
 import Operation from '../components/Operation'
 import Node from '../components/Node'
+import Element from '../components/Element'
 import Line from '../components/Line'
 import { getArray } from '../store/operation-slice'
 import { useSelector } from 'react-redux'
@@ -16,9 +17,9 @@ const ControllerBody = ({item,operation}) => {
           {array.map((i,index) =>
 
             <div className='flex flex-row items-center' key={index}>
-            <Node value={index}/>
-            {index !== array.length - 1 ? <Line/>: <></>}
-            </div>)}
+            <Element value={i}/>
+            </div>
+            )}
 
           </div>
         <ControlBar/>

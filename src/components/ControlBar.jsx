@@ -8,7 +8,8 @@ const ControlBar = () => {
   return (
     <>
       <div className='text-white bg-orange'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center items-center overflow-auto'>
+          <button><p className='underline'>randomize</p></button>
           <button><FaAngleDoubleLeft className='mx-5 my-3 w-4 h-4'/></button>
           <button><FaStepBackward className='mx-5 my-3 w-4 h-4'/></button>
           <button><FaPlay className='mx-5 my-3 w-4 h-4'/></button>

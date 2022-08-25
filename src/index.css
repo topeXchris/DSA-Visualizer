@@ -45,8 +45,8 @@
     align-items:center;
     border-color: theme('colors.orange-light');
     border-width: 5px; 
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
     background-color: theme('colors.orange');
   }
 }

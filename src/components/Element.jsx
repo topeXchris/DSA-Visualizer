@@ -2,7 +2,9 @@ import React from 'react'
 
 const Element = ({value}) => {
   return (
-    <div className='element text-7xl text-white'>{value}</div>
+    <div className='element text-white'>
+           <p className='text-4xl truncate ... p-0'>{value}</p>
+    </div>
   )
 }
 

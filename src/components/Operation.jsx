@@ -11,7 +11,7 @@ export const  Dropdown = ({name,item}) =>{
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex justify-center items-center w-auto border border-orange-light  shadow-sm shadow-orange-light md:mx-3 px-4 py-2 bg-white text-sm font-medium  hover:bg-orange focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-orange-light">
+        <Menu.Button className="inline-flex justify-center items-center w-auto border border-orange-light  shadow-sm shadow-orange-light md:mx-3 px-4 bg-white  hover:bg-orange focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-orange-light">
           {name}
           <FaAngleDown className="-mr-1 ml-2 h-5 w-5" />
         </Menu.Button>
