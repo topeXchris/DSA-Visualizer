@@ -12,7 +12,8 @@ const operationSlice = createSlice({
     initialState,
     reducers:{
         push(state,action){
-         const success = insert(state.array,action.payload);
+            const {elem,ind} = action.payload;
+         const success = insert(state.array,elem,ind);
             if(success < 0)
             {
                 console.log("no value")

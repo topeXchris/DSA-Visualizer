@@ -8,15 +8,20 @@ export const insert = (arr,elem = undefined,index=undefined)=>{
         return arr[arr.length] = elem
     }else{
         const array = arr;
-        if(index >= arr.length)
+        if(index > arr.length)
         {
             return -2;
 
         }else{
-            for(var i = index ; i<array.length; i++)
+            var j = 0;
+            const len = array.length
+            for(var i = len-1 ; i>=index; i--)
             {
-                array[array.length-i] = array[array.length-1];
+                  array[len - j] = array[i]
+                  console.log(array[len- j])
+                  j++
             }
+            return array[index] = elem;
         }
     }
 
@@ -24,5 +29,6 @@ export const insert = (arr,elem = undefined,index=undefined)=>{
 }
 
 export const pop = ()=>{
+
 
 }
